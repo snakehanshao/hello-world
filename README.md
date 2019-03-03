@@ -1,4 +1,3 @@
-包含使用的库，机器硬件，机器操作系统，训练时间等数据
 1、使用的库如下：
 from keras.models import *
 from keras.layers import *
