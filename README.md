@@ -1,4 +1,4 @@
-1、使用的库如下：
+#1、使用的库如下：
 from keras.models import *
 from keras.layers import *
 from keras.applications import *
@@ -7,12 +7,12 @@ import numpy as np
 import h5py
 from sklearn.utils import shuffle
 import pandas as pd
-2、机器硬件配置如下：
+#2、机器硬件配置如下：
 使用的是AWS平台上p3.2xlarge实力，具体配置为：8个虚拟GPU，64G内存
-3、机器操作系统是Ubun
-4、训练时间如下：
-（1）本项目主要耗时的是提取特征向量，时间如下所示，其中没两行时间代表提取一个Keras模型所花费的时间
-Found 25000 images belonging to 2 classes.
+#3、机器操作系统是Ubun
+#4、训练时间如下：
+##（1）本项目主要耗时的是提取特征向量，时间如下所示，其中没两行时间代表提取一个Keras模型所花费的时间
+###Found 25000 images belonging to 2 classes.
 Found 12500 images belonging to 1 classes.
 2000/2000 [==============================] - 573s 287ms/step
 500/500 [==============================] - 133s 266ms/step
@@ -36,7 +36,7 @@ Found 25000 images belonging to 2 classes.
 Found 12500 images belonging to 1 classes.
 2000/2000 [==============================] - 319s 159ms/step
 500/500 [==============================] - 66s 132ms/step
-（2）提取完特征向量后，训练所花费的时间就比较少了，如下所示：
+##（2）提取完特征向量后，训练所花费的时间就比较少了，如下所示：
 Train on 40000 samples, validate on 10000 samples
 Epoch 1/16
 40000/40000 [==============================] - 128s 3ms/step - loss: 0.0305 - acc: 0.9912 - val_loss: 0.0094 - val_acc: 0.9974
