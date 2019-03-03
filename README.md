@@ -1,12 +1,20 @@
-<p>1、使用的库如下：
-from keras.models import *
-from keras.layers import *
-from keras.applications import *
-from keras.preprocessing.image import *
-import numpy as np
-import h5py
-from sklearn.utils import shuffle
-import pandas as pd
+#使用的库如下：
+>from keras.models import *
+
+>from keras.layers import *
+
+>from keras.applications import *
+
+>from keras.preprocessing.image import *
+
+>import numpy as np
+
+>import h5py
+
+>from sklearn.utils import shuffle
+
+>import pandas as pd
+
 2、机器硬件配置如下：
 使用的是AWS平台上p3.2xlarge实力，具体配置为：8个虚拟GPU，64G内存
 3、机器操作系统是Ubun
